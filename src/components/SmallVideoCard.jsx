@@ -14,7 +14,7 @@ export default function SmallVideoCard({ video }) {
   return (
     <Stack sx={{mt: 1}}>
         <Form onClick={e => navigate(`/videos/watch/${videoIdUri}`, {state: {video}})}>
-            <Stack direction={'row'} spacing={1}>
+            <Stack direction={'row'} spacing={1} sx={{cursor: 'pointer'}}>
                 <img src={thumbnails.medium.url} 
                     style={{borderRadius: '5%', maxHeight: 120, maxWidth: 180,}}
                     alt="Thumbnail Images"

@@ -10,15 +10,14 @@ import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
 export default function VideoCard({ video }) {
     const {title, thumbnails, channelId ,channelTitle, publishedAt, description} = video.snippet;
     const { url } = useChannelInfo(channelId);
-    console.log(url);
     const navigate = useNavigate();
     const videoIdUri = typeof(video.id) === 'string' ? video.id : video.id.videoId;
   return (
     <Stack>
         <Form onClick={e => navigate(`/videos/watch/${videoIdUri}`, {state: {video}})}>
-            <Stack direction={'row'} spacing={3} sx={{marginTop: 5}}>
-                <img src={thumbnails.standard.url} 
-                    style={{borderRadius: '5%'}}
+            <Stack direction={'row'} spacing={3} sx={{marginTop: 5, cursor: 'pointer'}}>
+                <img src={thumbnails.standard ? thumbnails.standard.url : thumbnails.high.url } 
+                    style={{borderRadius: '5%', maxWidth:480, maxHeight:360}}
                     alt="Thumbnail Images"
                 />
                 <Stack spacing={1} style={{marginTop: 5}}>
@@ -39,6 +38,7 @@ export default function VideoCard({ video }) {
                     >
                         {description}
                     </Typography>
+
                 </Stack>
             </Stack>
         </Form>
