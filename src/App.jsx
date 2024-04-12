@@ -6,12 +6,12 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div>
+    <>
       <SearchHeader />
       <QueryClientProvider client={queryClient}>
         <Outlet />
       </QueryClientProvider>
-    </div>
+    </>
   );
 }
 
