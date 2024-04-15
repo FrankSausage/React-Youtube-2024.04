@@ -9,7 +9,8 @@ export const useVideoInfo = keyword => {
     queryFn: async () => {
       const uri = keyword ? keywordUri+keyword : popularUri;
       return axios
-              .get(uri)
+              .get(`/data/${keyword ? 'search' : 'popular'}.json`)
+              // .get(uri)
               .then(res => res.data.items);
     }, staleTime: 1000 * 60 * 1,      // 1분, ms 단위
   });
