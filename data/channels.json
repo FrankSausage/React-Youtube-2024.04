@@ -1,0 +1,43 @@
+{
+  "kind": "youtube#channelListResponse",
+  "etag": "E5RNcmMAiZof1n06oVCjWUdRw8Y",
+  "pageInfo": {
+    "totalResults": 1,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#channel",
+      "etag": "FpzKQXfMOLvg6XsfkMFWSbCVvPk",
+      "id": "UCjmJDM5pRKbUlVIzDYYWb6g",
+      "snippet": {
+        "title": "Warner Bros. Pictures",
+        "description": "Welcome to the official channel for Warner Bros. Pictures. Subscribe now for all our latest movie trailers, clips and featurettes!\n",
+        "customUrl": "@warnerbrospictures",
+        "publishedAt": "2006-10-17T22:30:51Z",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/CoYiDB8ojHTQvSwr9h8clzpcm85wiFaHroW0MaVgTnDEXAIMxhGlzC5Vwo9N3-z3obfVqc_G62I=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/CoYiDB8ojHTQvSwr9h8clzpcm85wiFaHroW0MaVgTnDEXAIMxhGlzC5Vwo9N3-z3obfVqc_G62I=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/CoYiDB8ojHTQvSwr9h8clzpcm85wiFaHroW0MaVgTnDEXAIMxhGlzC5Vwo9N3-z3obfVqc_G62I=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        },
+        "localized": {
+          "title": "Warner Bros. Pictures",
+          "description": "Welcome to the official channel for Warner Bros. Pictures. Subscribe now for all our latest movie trailers, clips and featurettes!\n"
+        },
+        "country": "US"
+      }
+    }
+  ]
+}
